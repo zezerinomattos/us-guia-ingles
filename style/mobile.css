@@ -1,0 +1,67 @@
+
+/*--------------------------*/
+/*  ELEMENTOS DO HEADER     */
+/*--------------------------*/
+
+@media screen and (max-width: 1280px){
+    header{
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('../images/haderCapaM.jpg');
+    }
+}
+
+@media screen and (max-width: 640px){
+    header{
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('../images/haderCapaPPP.jpg');
+        background-position: left center;
+    }
+}
+
+/*------- NAVEBAR ------------*/
+
+@media screen and (max-width: 630px) {
+
+    header nav#nav-esquerda div#logo{
+        margin-left: 1rem;
+    }
+
+    /*-------- MENU HAMBURGUER -----------*/
+
+    header nav#nav-esquerda{
+        justify-content: space-between;
+    }
+
+    header nav#nav-esquerda ul#icone-menu{
+        display: flex;
+    }
+
+    header nav#nav-esquerda ul#icone-menu li#menuX{
+        display: none;
+    }   
+
+    /*-------- MENU -------------- */
+    header nav#nav-esquerda ul.menu-principal{
+        flex-direction: column;
+        width: 80%;
+        height: 70vh;
+        flex-direction: column;
+        background: linear-gradient(rgba(69,133,140) 0%, rgba(54,176,224) 45%, rgba(217,43,4) 100%);
+        padding-top: .5rem;
+
+        position: absolute;
+        top: 7rem;
+        right: 0;
+        z-index: 999;
+
+        display: none;
+    }
+
+    header nav#nav-esquerda ul.menu-principal li{
+        margin: .5rem;
+    }
+
+    header nav#nav-esquerda ul.menu-principal li a{
+        font-size: 120%;
+    }
+}
+
+

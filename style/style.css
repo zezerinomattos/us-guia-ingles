@@ -1,0 +1,179 @@
+/*
+CORES
+#D92B04
+#45858C
+#A0D9D9
+#D9C589
+#BF9765
+
+font-family: 'Caveat', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Marhey', cursive;
+font-family: 'Mynerve', cursive;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: #13182B;
+} */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1{
+    font-family: 'Mynerve', cursive;
+    text-shadow: 4px 4px 6px #000;
+    font-weight: 700;
+    font-size: max(44px, 5.2vw);
+}
+
+h2{
+    font-family: 'Marhey', cursive;
+    text-shadow: 4px 4px 6px #464646;
+    font-weight: 700;
+    font-size: max(20px, 2.8vw);
+}
+
+/*--------------------------*/
+/*  ELEMENTOS DO HEADER     */
+/*--------------------------*/
+
+header{
+    max-width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url('../images/headerCapaG.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+}
+
+/*------- NAVEBAR ------------*/
+
+header nav#nav-esquerda{
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;   
+    /* justify-content: space-between; */
+}
+
+header nav#nav-esquerda div#logo{
+    width: 150px;
+    height: 150px;
+    margin-left: 5rem;
+}
+
+header nav#nav-esquerda div#logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*-------- MENU HAMBURGUER -----------*/
+
+header nav#nav-esquerda ul#icone-menu{
+    display: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li{
+    list-style: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li ion-icon{
+    font-size: 50px;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+/*-------- MENU -------------- */
+
+header nav#nav-esquerda ul.menu-principal{
+    margin-left: 5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header nav#nav-esquerda ul.menu-principal li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+header nav#nav-esquerda ul.menu-principal li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 110%;
+    text-shadow: 4px 6px 10px #000;
+    padding-bottom: 10px;
+    transition: .3s ease-in-out;
+}
+
+header nav#nav-esquerda ul.menu-principal li a:hover{
+    opacity: .6;
+    border-bottom: 1px solid #fff;
+}
+
+/*-------- CHAMADA -------------- */
+
+header div#chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+header div#chamada h1{
+    color: #FFF;
+
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+}
+
+header div#chamada h2{
+    color: #D9C589;
+
+    margin-bottom: 55px;
+
+    animation-name: HeaderH1-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+header div#chamada a{
+    font-size: max(16px, 2vw);
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+
+    background: linear-gradient(rgba(7,140,49,55) 0%, rgba(6,89,2,35)50%, rgba(6,89,2,35)100%);
+
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    
+}
