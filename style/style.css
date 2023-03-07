@@ -42,6 +42,33 @@ h2{
     font-size: max(20px, 2.8vw);
 }
 
+
+/*------- BOTÃO CHAMADA ------------*/
+
+div#chamada a{
+    font-size: max(16px, 2vw);
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(rgba(7,140,49,55) 0%, rgba(6,89,2,35)50%, rgba(6,89,2,35)100%);
+
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
+    
+}
+
+div#chamada a:hover{
+    opacity: .8;
+}
+
 /*--------------------------*/
 /*  ELEMENTOS DO HEADER     */
 /*--------------------------*/
@@ -158,22 +185,30 @@ header div#chamada h2{
     animation-fill-mode: backwards;
 }
 
-header div#chamada a{
-    font-size: max(16px, 2vw);
-    color: #FFF;
-    text-decoration: none;
-    padding: 20px 80px;
-    border-radius: 50px;
-    font-weight: 600;
 
-    background: linear-gradient(rgba(7,140,49,55) 0%, rgba(6,89,2,35)50%, rgba(6,89,2,35)100%);
 
-    display: inline-block;
+/*--------------------------*/
+/*  SECTION APRESENTAÇÃO    */
+/*--------------------------*/
 
-    animation-name: HeaderA-moverParaCima;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: backwards;
-    
+section.apresentacao{
+    max-width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+section.apresentacao div.apresentacao-mestre{
+    text-align: center;
+    margin-bottom: 40PX;
+}
+
+section.apresentacao div.apresentacao-mestre img{
+    border: 2px solid #BF9765;
+}
+
+section.apresentacao div.apresentacao-mestre h2{
+    font-size: max(22px, 1.8vw);
+    margin-top: 10px;
 }
