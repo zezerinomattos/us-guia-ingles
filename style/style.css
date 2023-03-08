@@ -309,6 +309,7 @@ section.para-quem div.para-quem-mestre{
 
 section.para-quem div.para-quem-mestre div.para-quem-img{
     width: 520px;
+    margin-bottom: 20px;
 }
 
 section.para-quem div.para-quem-mestre div.para-quem-img img{
@@ -333,43 +334,91 @@ section.para-quem div.para-quem-mestre div.para-quem-texto p{
 /*--------------------------*/
 /*  ELEMENTOS DO FOOTER     */
 /*--------------------------*/
+
 footer{
     width: 100%;
     background-color: #13182B;
+    padding-bottom: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-mestre div.logo{
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer div.footer-mestre div.logo img{
+    max-width: 100%;
+}
+
+footer div.footer-mestre div.footer-inf{
+    width: 70%;
+    margin-bottom: 50px;
+    padding-top: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 }
 
-footer div.logo{
-    width: 250px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-footer div.logo img{
-    max-width: 100%;
-}
-
-footer nav.nav-footer ul{
+footer div.footer-mestre div.footer-inf nav.nav-footer ul{
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
-footer nav.nav-footer ul li{
+footer div.footer-mestre div.footer-inf nav.nav-footer ul li{
     list-style: none;
     margin-bottom: 15px;
 }
 
-footer nav.nav-footer ul li a{
+footer div.footer-mestre div.footer-inf nav.nav-footer ul li a{
     text-decoration: none;
     color: #FFF;
     font-size: 110%;
     transition: .3s ease-out;
 }
 
-footer nav.nav-footer ul li a:hover{
-    border: 2px solid #D9C589;
-    
+footer div.footer-mestre div.footer-inf nav.nav-footer ul li a:hover{
+    border: 2px solid #D9C589;  
+}
+
+footer div.footer-mestre div.footer-inf div.cartoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-mestre div.footer-inf div.cartoes span{
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-size: max(16px, 1.5vw);
+    margin-bottom: 15px;
+}
+
+footer div.footer-mestre div.footer-inf div.cartoes div.footer-img{
+    max-width: 340px;
+}
+
+footer div.footer-mestre div.footer-inf div.cartoes div.footer-img img{
+    max-width: 100%;
+}
+
+footer span.autorais{
+    color: #FFF;
+    font-size: max(14px, .8vw);
+    margin-top: 20px;
 }

@@ -64,4 +64,26 @@
     }
 }
 
+/*--------------------------*/
+/*  SECTION PARA-QUEM       */
+/*--------------------------*/
 
+@media screen and (max-width: 1280px){
+    section.para-quem div.para-quem-mestre div.para-quem-texto{
+        text-align: center;
+    }
+}
+
+/*--------------------------*/
+/*  ELEMENTOS DO FOOTER     */
+/*--------------------------*/
+
+@media screen and (max-width: 765px){
+    footer div.footer-mestre div.footer-inf{
+        width: 95%;
+    }
+
+    footer div.footer-mestre div.footer-inf div.cartoes div.footer-img{
+        max-width: 200px;
+    }
+}
