@@ -381,7 +381,7 @@ section.produto div.produto-inf div.produto-guia{
     align-items: center;
     text-align: center;
     padding: 10px;
-
+    margin-bottom: 10px;
     border: 2px solid #13182B;
 }
 
@@ -395,7 +395,7 @@ section.produto div.produto-inf div.produto-guia div.guia-img img{
 
 section.produto div.produto-inf div.produto-guia h4{
     font-size: max(20px, 1.4vw);
-    color: #FFF;
+    color: #BF9765;
     text-shadow: 2px 2px 4px #1a1919;
     margin-top: 2rem;
 }
@@ -403,7 +403,7 @@ section.produto div.produto-inf div.produto-guia h4{
 section.produto div.produto-inf div.produto-guia p{
     max-width: 400px;
     font-size: max(14px, .9vw);
-    color: #BF9765;
+    color: #FFF;
     text-shadow: 2px 2px 4px #1a1919;
     margin-top: 1rem;
     margin-bottom: 6rem;
