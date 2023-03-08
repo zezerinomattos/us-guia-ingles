@@ -357,6 +357,7 @@ section.produto h2{
 
 section.produto div.produto-sup-img{
     max-width: 400px;
+    box-shadow: 4px 4px  6px #000;
 }
 
 section.produto div.produto-sup-img img{
@@ -383,6 +384,8 @@ section.produto div.produto-inf div.produto-guia{
     padding: 10px;
     margin-bottom: 10px;
     border: 2px solid #13182B;
+    border-radius: 10px;
+    box-shadow: 4px 4px  6px #383838;
 }
 
 section.produto div.produto-inf div.produto-guia div.guia-img{
