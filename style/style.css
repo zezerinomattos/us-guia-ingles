@@ -451,6 +451,7 @@ footer div.footer-mestre div.logo{
     width: 250px;
     padding-top: 20px;
     padding-bottom: 20px;
+    cursor: pointer;
 }
 
 footer div.footer-mestre div.logo img{
