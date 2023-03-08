@@ -332,6 +332,97 @@ section.para-quem div.para-quem-mestre div.para-quem-texto p{
 }
 
 /*--------------------------*/
+/*  SECTION PRODUTOS        */
+/*--------------------------*/
+section.produto{
+    width: 100%;
+    background-color: #45858C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+}
+
+section.produto h2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    max-width: 750px;
+    font-size: max(22px, 2.4vw);
+    text-align: center;
+    color: #BF9765;
+}
+
+section.produto div.produto-sup-img{
+    max-width: 400px;
+}
+
+section.produto div.produto-sup-img img{
+    max-width: 100%;
+}
+
+section.produto div.produto-inf{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;   
+    margin-top: 50px;
+}
+
+section.produto div.produto-inf div.produto-guia{
+    position: relative;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+    border: 2px solid #13182B;
+}
+
+section.produto div.produto-inf div.produto-guia div.guia-img{
+    max-width: 300px;
+}
+
+section.produto div.produto-inf div.produto-guia div.guia-img img{
+    max-width: 100%;
+}
+
+section.produto div.produto-inf div.produto-guia h4{
+    font-size: max(20px, 1.4vw);
+    color: #FFF;
+    text-shadow: 2px 2px 4px #1a1919;
+    margin-top: 2rem;
+}
+
+section.produto div.produto-inf div.produto-guia p{
+    max-width: 400px;
+    font-size: max(14px, .9vw);
+    color: #BF9765;
+    text-shadow: 2px 2px 4px #1a1919;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
+}
+
+section.produto div.produto-inf div.produto-guia a{
+    position: absolute;
+    bottom: 10px;
+    padding: 10px 0px;
+    width: 300px;
+
+    font-size: max(16px, 1vw);
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 50px;
+    background: linear-gradient(rgba(7,140,49,55) 0%, rgba(6,89,2,35)50%, rgba(6,89,2,35)100%);
+}
+
+/*--------------------------*/
 /*  ELEMENTOS DO FOOTER     */
 /*--------------------------*/
 
@@ -422,3 +513,5 @@ footer span.autorais{
     font-size: max(14px, .8vw);
     margin-top: 20px;
 }
+
+
