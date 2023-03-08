@@ -18,7 +18,13 @@
 
 /*------- NAVEBAR ------------*/
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 1110px){
+    header nav#nav-esquerda ul.menu-principal li a{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 970px) {
 
     header nav#nav-esquerda div#logo{
         margin-left: 1rem;
