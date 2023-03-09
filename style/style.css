@@ -423,6 +423,11 @@ section.produto div.produto-inf div.produto-guia a{
     text-decoration: none;
     border-radius: 50px;
     background: linear-gradient(rgba(7,140,49,55) 0%, rgba(6,89,2,35)50%, rgba(6,89,2,35)100%);
+    transition: .3s ease-out;
+}
+
+section.produto div.produto-inf div.produto-guia a:hover{
+    opacity: .7;
 }
 
 /*--------------------------*/
