@@ -21,26 +21,26 @@
         </div>
     </nav>
 
-    <form class="col-md-4 col-sm-10 mx-auto my-5">
+    <form class="col-md-4 col-sm-10 mx-auto my-5" action="POST">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome"/>
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome"/>
           <div id="emailHelp" class="form-text">Nunca compartilharemos seus dados com mais ninguém.</div>
         </div>
 
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" />
           <div id="emailHelp" class="form-text">Nunca compartilharemos seus dados com mais ninguém.</div>
         </div>
 
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Telefone</label>
-          <input type="text" class="form-control" id="telefone" placeholder="(00) 0 0000-0000" />
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 0 0000-0000" />
           <div id="emailHelp" class="form-text">Nunca compartilharemos seus dados com mais ninguém.</div>
         </div>
 
-        <button onclick="validarForm()" type="button" class="btn btn-primary btn-enviar">Enviar</button>
+        <button onclick="validarForm()" type="submit" class="btn btn-primary btn-enviar">Enviar</button>
     </form>
 
     <div id="guiaGratuito" style="height: 550px; width: 100%;" >
