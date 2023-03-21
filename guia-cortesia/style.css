@@ -1,4 +1,17 @@
 
 div#guiaGratuito{
     display: none;
+    margin-bottom: 40px;
+}
+
+div#texto-instrucoes{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 10px;
+
+    margin-bottom: 60px;
+}
+
+div#texto-instrucoes span{
+    font-size: max();
 }
