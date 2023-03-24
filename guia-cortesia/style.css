@@ -1,3 +1,24 @@
+/*
+CORES
+#D92B04
+#45858C
+#A0D9D9
+#D9C589
+#BF9765
+
+font-family: 'Caveat', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Marhey', cursive;
+font-family: 'Mynerve', cursive;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 div#guiaGratuito{
     display: none;
@@ -14,4 +35,215 @@ div#texto-instrucoes{
 
 div#texto-instrucoes span{
     font-size: max();
+}
+
+div#texto-instrucoes span#porque-form{
+    display: flex;
+}
+
+div#texto-instrucoes span#pos-solicitacao{
+    display: none;
+}
+
+/*--------------------------*/
+/*  ELEMENTOS OFERTA        */
+/*--------------------------*/
+
+section.oferta{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+
+    display: none;
+}
+
+section.oferta div.destaque{
+    width: 100%;
+    padding: 10px;
+    background-color: #F20519;
+    margin-bottom: 60px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.oferta div.destaque div.destaque-texto{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.oferta div.destaque ion-icon{
+    width: 40px;
+    height: 40px;
+    color: #F2B705;
+    margin-right: 10px;
+}
+
+section.oferta div.destaque h3{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+section.oferta div.destaque div#countdown{
+    font-size: max(25px, 2vw);
+    color: #F2B705;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+section.oferta div.inferior-oferta{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.oferta div.inferior-oferta div.inferior-textos{
+    max-width: 600px;
+    padding: 10px;
+}
+
+section.oferta div.inferior-oferta div.inferior-textos h1{
+    font-size: max(25px, 2vw);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    max-width: 90%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+section.oferta div.inferior-oferta div.inferior-textos p{
+    font-size: max(12px, .8vw);
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-bottom: 1.4rem;
+}
+
+section.oferta div.inferior-oferta div.oferta-img{
+    max-width: 500px;
+    padding: 10px;
+}
+
+section.oferta div.inferior-oferta div.oferta-img img{
+    max-width: 100%;
+}
+
+section.oferta a{
+    font-size: max(16px, 1.8vw);
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(rgba(7,140,49,55) 0%, rgba(6,89,2,35)50%, rgba(6,89,2,35)100%);
+    margin-top: 5rem;
+    display: inline-block;
+    
+}
+
+section.oferta a:hover{
+    opacity: .8;
+}
+
+/*--------------------------*/
+/*  ELEMENTOS DO FOOTER     */
+/*--------------------------*/
+
+footer{
+    width: 100%;
+    background-color: #13182B;
+    padding-bottom: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-mestre div.logo{
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+footer div.footer-mestre div.logo img{
+    max-width: 100%;
+}
+
+footer div.footer-mestre div.footer-inf{
+    width: 70%;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div.footer-mestre div.footer-inf nav.nav-footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+footer div.footer-mestre div.footer-inf nav.nav-footer ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer div.footer-mestre div.footer-inf nav.nav-footer ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 110%;
+    transition: .3s ease-out;
+}
+
+footer div.footer-mestre div.footer-inf nav.nav-footer ul li a:hover{
+    border: 2px solid #D9C589;  
+}
+
+footer div.footer-mestre div.footer-inf div.cartoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-mestre div.footer-inf div.cartoes span{
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-size: max(16px, 1.5vw);
+    margin-bottom: 15px;
+}
+
+footer div.footer-mestre div.footer-inf div.cartoes div.footer-img{
+    max-width: 340px;
+}
+
+footer div.footer-mestre div.footer-inf div.cartoes div.footer-img img{
+    max-width: 100%;
+}
+
+footer span.autorais{
+    color: #FFF;
+    font-size: max(14px, .8vw);
+    margin-top: 20px;
 }
