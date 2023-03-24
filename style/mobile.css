@@ -80,6 +80,17 @@
     }
 }
 
+
+/*--------------------------*/
+/*  SECTION PRODUTOS      */
+/*--------------------------*/
+
+@media screen and (max-width: 1500px){
+    section.produto div.produto-inf div.produto-guia div.preco-guia div.linha{
+        top:  .8rem;
+    }
+}
+
 /*--------------------------*/
 /*  ELEMENTOS DO FOOTER     */
 /*--------------------------*/

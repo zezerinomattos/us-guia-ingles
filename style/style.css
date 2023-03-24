@@ -355,14 +355,16 @@ section.produto h2{
     color: #BF9765;
 }
 
-section.produto div.produto-sup-img{
+/* section.produto div.produto-sup-img{
     max-width: 400px;
     box-shadow: 4px 4px  6px #000;
+
+    display: none;
 }
 
 section.produto div.produto-sup-img img{
     max-width: 100%;
-}
+} */
 
 section.produto div.produto-inf{
     width: 100%;
@@ -374,9 +376,10 @@ section.produto div.produto-inf{
 
 section.produto div.produto-inf div.produto-guia{
     position: relative;
-    max-width: 500px;
+    max-width: 800px;
     margin-left: 10px;
     margin-right: 10px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -399,22 +402,93 @@ section.produto div.produto-inf div.produto-guia div.guia-img img{
 section.produto div.produto-inf div.produto-guia h4{
     font-size: max(20px, 1.4vw);
     color: #BF9765;
-    text-shadow: 2px 2px 4px #1a1919;
+    text-shadow: 2px 2px 4px #363535;
     margin-top: 2rem;
 }
 
+section.produto div.produto-inf div.produto-guia h4.melhor-escolha{
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: rgba(6,89,2,35);
+    color: #FFF;
+}
+
+section.produto div.produto-inf div.produto-guia h4.gratuito{
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: #202426;
+    color: #FFF;
+}
+
+section.produto div.produto-inf div.produto-guia div.preco-guia{
+    margin-top: 2rem;
+    position: relative;
+}
+
+section.produto div.produto-inf div.produto-guia div.preco-guia h4.valor{
+    color: rgba(6,89,2,35);
+}
+
+section.produto div.produto-inf div.produto-guia div.preco-guia span{
+    color: #d63d3d;
+    font-size: max(16px, 1.2vw);
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    text-shadow: 2px 2px 4px #1a1919;
+}
+
+section.produto div.produto-inf div.produto-guia div.preco-guia div.linha{
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    top:  1.1rem;
+    right: 5px;
+    border: none;
+    opacity: .8;
+    
+    background-color: #971d1d;
+    box-shadow: 2px 2px 4px #1a1919;
+}
+
+section.produto div.produto-inf div.produto-guia div.check-out-americano{
+    margin-bottom: 6rem;
+}
+
+section.produto div.produto-inf div.produto-guia div.check-texto{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: left;
+}
+
+section.produto div.produto-inf div.produto-guia ion-icon{
+    background-color: darkgreen;
+    color: #FFF;
+    /* font-size: 30px; */
+    margin-right: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 30px;
+    height: 30px;
+    min-width: 25px;
+    min-height: 25px;
+}
+
 section.produto div.produto-inf div.produto-guia p{
-    max-width: 400px;
+    max-width: 600px;
     font-size: max(14px, .9vw);
     color: #FFF;
-    text-shadow: 2px 2px 4px #1a1919;
+    text-shadow: 2px 2px 4px #383737;
     margin-top: 1rem;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 section.produto div.produto-inf div.produto-guia a{
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     padding: 10px 0px;
     width: 300px;
 
