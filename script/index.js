@@ -41,16 +41,16 @@ $('header nav#nav-esquerda ul.menu-principal li:eq(1)').click(function(){
     })
 })
 
-$('header nav#nav-esquerda ul.menu-principal li:eq(2)').click(function(){
-    $('html, body').animate({scrollTop:$('section.solucao').offset().top}, 1000, function(){
-       if($(window).width() < 812){
-        esconderMenu();
-        controle = true;
-       }
-    })
-})
+// $('header nav#nav-esquerda ul.menu-principal li:eq(2)').click(function(){
+//     $('html, body').animate({scrollTop:$('section.solucao').offset().top}, 1000, function(){
+//        if($(window).width() < 812){
+//         esconderMenu();
+//         controle = true;
+//        }
+//     })
+// })
 
-$('header nav#nav-esquerda ul.menu-principal li:eq(3)').click(function(){
+$('header nav#nav-esquerda ul.menu-principal li:eq(2)').click(function(){
     $('html, body').animate({scrollTop:$('section.para-quem').offset().top}, 1000, function(){
        if($(window).width() < 812){
         esconderMenu();
@@ -59,7 +59,7 @@ $('header nav#nav-esquerda ul.menu-principal li:eq(3)').click(function(){
     })
 })
 
-$('header nav#nav-esquerda ul.menu-principal li:eq(4)').click(function(){
+$('header nav#nav-esquerda ul.menu-principal li:eq(3)').click(function(){
     $('html, body').animate({scrollTop:$('section.produto').offset().top}, 1000, function(){
        if($(window).width() < 812){
         esconderMenu();

@@ -286,6 +286,8 @@ section.para-quem{
     padding-top: 20px;
     padding-bottom: 40px;
     margin-bottom: 60px;
+
+    background-color: #750707;
 }
 
 section.para-quem h2{
@@ -294,7 +296,8 @@ section.para-quem h2{
     max-width: 750px;
     font-size: max(22px, 2.8vw);
     text-align: center;
-    color: #BF9765;
+    /* color: #BF9765; */
+    color: #fff;
 }
 
 section.para-quem div.para-quem-mestre{
@@ -309,11 +312,14 @@ section.para-quem div.para-quem-mestre{
 
 section.para-quem div.para-quem-mestre div.para-quem-img{
     width: 520px;
+    height: 700px;
     margin-bottom: 20px;
 }
 
 section.para-quem div.para-quem-mestre div.para-quem-img img{
     max-width: 100%;
+    max-height: 100%;
+    box-shadow: 2px 2px 2px 4px #BF9765;
 }
 
 section.para-quem div.para-quem-mestre div.para-quem-texto{
@@ -326,8 +332,9 @@ section.para-quem div.para-quem-mestre div.para-quem-texto{
 section.para-quem div.para-quem-mestre div.para-quem-texto p{
     width: 95%;
     margin: auto;
-    color: #45858C;
-    text-shadow: 2px 2px 5px #181717;
+    /* color: #45858C; */
+    color: #fff;
+    text-shadow: 1px 1px 4px #181717;
     font-size: max(16px, 1vw);
 }
 
@@ -336,7 +343,7 @@ section.para-quem div.para-quem-mestre div.para-quem-texto p{
 /*--------------------------*/
 section.produto{
     width: 100%;
-    background-color: #45858C;
+    background-color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -479,7 +486,7 @@ section.produto div.produto-inf div.produto-guia ion-icon{
 section.produto div.produto-inf div.produto-guia p{
     max-width: 600px;
     font-size: max(14px, .9vw);
-    color: #FFF;
+    color: #000;
     text-shadow: 2px 2px 4px #383737;
     margin-top: 1rem;
     margin-bottom: 1rem;

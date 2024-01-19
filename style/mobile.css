@@ -80,6 +80,21 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    section.para-quem div.para-quem-mestre{
+        flex-flow: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    section.para-quem div.para-quem-mestre div.para-quem-img{
+        max-width: 520px;
+        max-height: 320px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
 
 /*--------------------------*/
 /*  SECTION PRODUTOS      */
@@ -90,6 +105,7 @@
         top:  .8rem;
     }
 }
+
 
 /*--------------------------*/
 /*  ELEMENTOS DO FOOTER     */
