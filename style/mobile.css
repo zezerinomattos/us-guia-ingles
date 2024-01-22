@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 500px){
     section.para-quem div.para-quem-mestre{
-        flex-flow: wrap-reverse;
+        /* flex-flow: wrap-reverse; */
         justify-content: center;
         align-items: center;
     }
