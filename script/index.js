@@ -95,3 +95,34 @@ $('footer div.footer-mestre div.logo').click(function(){
     $('html, body').animate({scrollTop:$('header').offset().top}, 1000)
 })
 
+
+
+ // Defina a contagem regressiva em segundos
+ var segundosRestantes = 600; // 10 minutos = 600 segundos
+
+ function atualizarContador() {
+     var minutos = Math.floor(segundosRestantes / 60);
+     var segundos = segundosRestantes % 60;
+
+     // Adicione zeros à esquerda se os minutos ou segundos forem menores que 10
+     minutos = minutos < 10 ? "0" + minutos : minutos;
+     segundos = segundos < 10 ? "0" + segundos : segundos;
+
+     // Atualize o conteúdo da div
+     document.getElementById("contador").innerHTML = minutos + ":" + segundos;
+
+     // Reduza os segundos restantes
+     segundosRestantes--;
+
+     // Verifique se o tempo chegou a zero
+     if (segundosRestantes < 0) {
+         clearInterval(contadorInterval);
+         document.getElementById("contador").innerHTML = "Tempo encerrado!";
+     }
+ }
+
+ // Chame a função inicialmente para evitar um atraso de um segundo
+ atualizarContador();
+
+ // Configurar um intervalo para chamar a função a cada segundo
+ var contadorInterval = setInterval(atualizarContador, 1000);

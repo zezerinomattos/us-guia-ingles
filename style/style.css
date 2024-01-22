@@ -74,6 +74,37 @@ div.chamada a:hover{
 /*  ELEMENTOS DO HEADER     */
 /*--------------------------*/
 
+div.alerta-time{
+    width: 100%;
+    height: max(60px, 4vh);
+    background-color: #971d1d;
+    position: fixed;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div.alerta-time div.clock{
+    font-size: max(22px, 1.4vw);
+    text-align: center;
+    color: #971d1d;
+    background-color: #fff;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+div.alerta-time h3{
+    color: #FFF;
+    margin: 0 10px;
+    font-size: max(20px, 1.2vw);
+}
+
 header{
     max-width: 100%;
     height: 90vh;
